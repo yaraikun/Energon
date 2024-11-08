@@ -32,7 +32,3 @@ specs:
 	firefox $(SPECS)
 
 .PHONY: all run clean specs
-
-
-
-
