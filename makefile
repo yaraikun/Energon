@@ -1,23 +1,23 @@
-# gcc
+# COMPILE
 CC = gcc
 CFLAGS = -Wall -Wextra -g -Iinclude
 
-# directories
+# DIRECTORIES
 SRC_DIR = src
-INC_DIR = include
 BUILD_DIR = build
 SPECS_DIR = specs/pdf
 
-# files
-SPECS = $(SPECS_DIR)/specs.pdf
+# FILES
 SRCS = $(wildcard $(SRC_DIR)/*.c)
 OBJS = $(patsubst $(SRC_DIR)/%.c, $(BUILD_DIR)/%.o, $(SRCS))
+SPECS = $(SPECS_DIR)/specs.pdf
 TARGET = $(BUILD_DIR)/robby
 
-all: $(TARGET)
+
+all: clean $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CC) -o $@ $^
+	$(CC) $(CFLAGS) $^ -o $@
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
