@@ -10,8 +10,8 @@ SPECS_DIR = specs/pdf
 # FILES
 SRCS = $(wildcard $(SRC_DIR)/*.c)
 OBJS = $(patsubst $(SRC_DIR)/%.c, $(BUILD_DIR)/%.o, $(SRCS))
-SPECS = $(SPECS_DIR)/specs.pdf
-TARGET = $(BUILD_DIR)/robby
+SPECS = $(SPECS_DIR)/energon.pdf
+TARGET = $(BUILD_DIR)/energon
 
 
 all: clean $(TARGET)
