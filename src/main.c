@@ -41,11 +41,24 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 #define TOTAL_WEEKS 10
 #define ENERGON_GOAL 1000000
 #define INITIAL_ENERGON 10000
 #define STACK_SIZE 10
+
+// Initialize game start values
+// Setup week
+// Setup days
+// Prompt to produce
+// Prompt to sell
+// Produce
+// Sell 
+// Recycle 
+// Display summary
+// Free memory heheh side project
 
 int main(void)
 {
