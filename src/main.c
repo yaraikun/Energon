@@ -49,6 +49,23 @@
 #define INITIAL_ENERGON 10000
 #define STACK_SIZE 10
 
+
+typedef struct {
+        int selling_price;
+        int cubes_sold;
+} DailyData;
+
+typedef struct {
+        int production_cost;
+        int trend;                  /* 0 = Scrap, 1 = Nominal, 2 = Primus */
+        DailyData *daily_data;      /* Array of 7 days */
+} WeekData;
+
+typedef struct {
+        int energon_balance;
+        WeekData *weeks;            /* Array of 10 weeks */
+} Game;
+
 // Initialize game start values
 // Setup week
 // Setup days
