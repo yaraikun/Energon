@@ -65,16 +65,25 @@ typedef struct {
         WeekData *weeks;            /* Array of 10 weeks */
 } Game;
 
-// Initialize game start values
-// Setup week
-// Setup days
-// Prompt to produce
-// Prompt to sell
-// Produce
-// Sell 
-// Recycle 
-// Display summary
-// Free memory heheh side project
+/* Initialize game start values */
+
+/* Setup week */
+
+/* Setup days */
+
+/* Prompt to produce */
+
+/* Prompt to sell */
+
+/* Produce */
+
+/* Sell */
+
+/* Recycle */
+
+/* Display summary */
+
+/* Free memory heheh side project */
 
 int main(void)
 {
