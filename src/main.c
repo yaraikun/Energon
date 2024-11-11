@@ -42,6 +42,11 @@
 
 #include <stdio.h>
 
+#define TOTAL_WEEKS 10
+#define ENERGON_GOAL 1000000
+#define INITIAL_ENERGON 10000
+#define STACK_SIZE 10
+
 int main(void)
 {
         printf("Hello, World!\n");
