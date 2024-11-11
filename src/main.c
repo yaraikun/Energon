@@ -49,7 +49,6 @@
 #define INITIAL_ENERGON 10000
 #define STACK_SIZE 10
 
-
 typedef struct {
         int selling_price;
         int cubes_sold;
@@ -79,6 +78,7 @@ typedef struct {
 
 int main(void)
 {
+        srand(time(NULL));
         printf("Hello, World!\n");
         return 0;
 }
